@@ -1,0 +1,1 @@
+(function(){"use strict";async function s(){try{(await navigator.mediaDevices.getUserMedia({audio:!0})).getTracks().forEach(e=>e.stop()),chrome.runtime.sendMessage({action:"micPermissionResult",granted:!0})}catch(r){const e=r;chrome.runtime.sendMessage({action:"micPermissionResult",granted:!1,error:e.message})}}s()})();

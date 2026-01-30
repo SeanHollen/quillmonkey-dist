@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "QuillMonkey",
+  "version": "1.0.0",
+  "minimum_chrome_version": "135",
+  "description": "AI-powered browser assistant for editing web pages",
+  "permissions": [
+    "identity",
+    "storage",
+    "sidePanel",
+    "scripting",
+    "activeTab",
+    "contextMenus",
+    "userScripts",
+    "offscreen",
+    "webNavigation",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://api.anthropic.com/*",
+    "https://api.openai.com/*",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "dist/content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Open QuillMonkey"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      }
+    }
+  },
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "requestPermission.html",
+        "dist/requestPermission.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
