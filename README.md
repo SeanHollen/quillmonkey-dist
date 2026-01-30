@@ -38,3 +38,4 @@ The AI assistant has access to these tools:
 
 - Chrome version 135 or later
 - API key for Anthropic or OpenAI (configure in extension settings)
+
