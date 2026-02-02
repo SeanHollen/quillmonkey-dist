@@ -5,6 +5,7 @@
   "minimum_chrome_version": "135",
   "description": "AI-powered browser assistant for editing web pages",
   "permissions": [
+    "identity",
     "storage",
     "sidePanel",
     "scripting",
