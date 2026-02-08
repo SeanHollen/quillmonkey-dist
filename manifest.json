@@ -1,5 +1,6 @@
 {
   "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoUs8nbcx6ppmPtlhudCnQ5iJ5WwR2l13h+g3C2L+fO6Gn8kx7X05+w1pexkfFcgir+poQ6gBroMLMVR0mTdiRhQJV2NnHtowKgjz2pN4mxWvswCvmr7CtPAe03wL8rI7ywTn0XdbttVZiya63yje1+vJiPP19XALnG1p60hi1hMRj2R8H8CidH4MRT6NAiXKBfF6UxJVcCqER/SUWel8WW9acaGEZC/yM8IBp81JemtRCjdirpqArv6D8ns9um2dI+zHogUl64XgPClLEETvlXPkS1n4dK3iiVNfttb3wET948TUQitoEaXhl3fJGb0mPAMfQdcXyf6oSAaWulSPpQIDAQAB",
   "name": "QuillMonkey",
   "version": "1.0.0",
   "minimum_chrome_version": "135",
