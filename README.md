@@ -31,8 +31,8 @@ The AI assistant has access to these tools:
 | **writeNew**        | Create a new userscript that executes immediately and auto-runs on matching pages |
 | **update**          | Modify an existing script's code, name, scope, or enabled status                  |
 | **append**          | Add code to the end of an existing script without re-running previous code        |
-| **list_scripts**    | List saved scripts with optional filtering by name, host, or status               |
-| **grab_screenshot** | Capture a screenshot of the current tab (requires approval)                       |
+| **listScripts**     | List saved scripts with optional filtering by name, host, or status               |
+| **grabScreenshot**  | Capture a screenshot of the current tab (requires approval)                       |
 
 ## Requirements
 
